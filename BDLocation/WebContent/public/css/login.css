@@ -1,0 +1,140 @@
+.login_wraper .sub_header{
+	background: none;
+	background-color: rgba(255,255,255,0.2);
+}
+.login_wraper .header .nav li a {
+	font-size: 14px;
+}
+.login_wraper{
+	width:100%;
+	height:100%;
+	/*background:#011219 url(../img/login_bg.jpg) center no-repeat;*/
+	position:relative;
+	z-index: 99;
+}
+.login_box{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	position:absolute;
+	top:50%;
+	margin-top:-120px;
+}
+.login_div{
+	width:1200px;
+	height:400px;
+	overflow:hidden;
+	margin:0 auto;
+}
+.login_div form{
+	display:block;
+	width:350px;
+	height:auto;
+	overflow:hidden;
+	float:right;
+	margin-right:65px;
+	padding-top:120px;
+	padding-bottom: 12px;
+	border: 1px #91dffe solid;
+	border-radius: 1px;
+	background: url(../img/login_logo.png) 25px 35px no-repeat;
+	background-color: rgba(255,255,255,0.15);
+}
+.login_div label{
+	display:block;
+	width:271px;
+	height:auto;
+	overflow:hidden;
+	margin:0 auto;
+	margin-bottom:20px;
+}
+.login_div span{
+	display:block;
+	width:65px;
+	height:32px;
+	overflow:hidden;
+	float:left;
+	margin-right:20px;
+	line-height:32px;
+	vertical-align:middle;
+	text-align:right;
+	font-size:14px;
+	color:#fff;
+}
+.login_div input{
+	display:block;
+	border: none;
+	background-color: #ffffff;
+	width:180px;
+	height:30px;
+	overflow:hidden;
+	float:left;
+	line-height:30px;
+	vertical-align:middle;
+	font-size:14px;
+	color:#333;
+	padding:0 10px;
+}
+.login_div input.login_text1{
+	width: 83px;
+	float: left;
+	margin-right: 14px;
+}
+.login_div i{
+	display: block;
+	width: 83px;
+	height: 30px;
+	overflow: hidden;
+	float: left;
+	cursor: pointer;
+	background-color: #05418a;
+}
+.login_div i img{
+	margin-left: -3px;
+	margin-top: 2px;
+}
+.login_div input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+	background-color: #ffffff;
+	color:#333;
+}
+.login_bt{
+	display: block;
+	width: 260px;
+	height: 40px;
+	overflow: hidden;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 40px;
+	vertical-align: middle;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #ff7d00;
+	border-radius: 1px;
+	margin-bottom: 30px;
+	cursor : pointer;
+}
+a.login_bt{
+	text-decoration: none;
+	color: #ffffff;
+}
+.login_link{
+	width: 260px;
+	height: 40px;
+	overflow: hidden;
+	margin: 0 auto;
+	line-height: 40px;
+	vertical-align: middle;
+}
+.login_link .reg{
+	font-size: 14px;
+	color: #ffffff;
+	float: right;
+	text-decoration: none;
+	cursor: pointer;
+}
+.login p{
+	background-color: #2196f3;
+}
+/*.login span{
+	background-color: transparent;
+}*/

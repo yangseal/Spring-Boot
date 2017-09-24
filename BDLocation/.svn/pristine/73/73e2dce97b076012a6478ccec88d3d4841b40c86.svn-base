@@ -1,0 +1,23 @@
+﻿  /*  html        { height: 100%;   }
+  body        { height: 100%;    margin: 0px;    padding: 0px;     font-size: 12px;              font:12px/150% "\5b8b\4f53",Arial,Verdana;color:#666;background:#f8f8f8;      }
+  */
+#container{width:100%; height:100%; float:left}
+ 
+ 
+
+/* 定义自定义点样式 */
+.markerContentStylePlan{position:relative; width:30px;} 
+.markerContentStylePlan  img{ position:absolute; left:-13px; top:-31px;}
+.markerContentStylePlan span{	background-color: #ef8441;   	width:70px;	 cursor: pointer; border:2px solid #FFF; 	position:absolute; 	text-align:center;	white-space:nowrap	-webkit-border-radius:5px; left:-30px; border-radius:5px; color:#636363; }
+
+.markerContentStyleBuild{position:relative; width:30px;} 
+.markerContentStyleBuild  img{ position:absolute; left:-13px; top:-31px;}
+.markerContentStyleBuild span{	background-color: #ffef01;   	width:70px; cursor: pointer;	 border:2px solid #FFF; 	position:absolute; 	text-align:center;	white-space:nowrap	-webkit-border-radius:5px; left:-30px;border-radius:5px; color:#636363; }
+ 
+.markerContentStyleUse{position:relative; width:30px;} 
+.markerContentStyleUse  img{ position:absolute; left:-13px; top:-31px;}
+.markerContentStyleUse span{	background-color: #b6d45d;   	width:70px;	 cursor: pointer; border:2px solid #FFF; 	position:absolute; 	text-align:center;	white-space:nowrap	-webkit-border-radius:5px; left:-30px;border-radius:5px; color:#636363; } 
+
+ 
+
+

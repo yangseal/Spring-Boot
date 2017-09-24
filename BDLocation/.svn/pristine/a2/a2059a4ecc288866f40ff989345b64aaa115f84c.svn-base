@@ -1,0 +1,100 @@
+package com.cnten.bdlocation.synserver.service;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.alibaba.fastjson.JSONArray;
+import com.alibaba.fastjson.JSONObject;
+import com.cnten.platform.dao.CommonDAO;
+import com.cnten.po.BaseConstruct;
+import com.cnten.po.BaseRealtimeLogs;
+import com.cnten.po.CorsAccount;
+import com.cnten.po.CorsRealtimeLogs;
+
+@Service
+public class SyncDataBdserverService {
+	@Autowired
+	private CommonDAO commonDAO;
+	
+	public JSONArray getCorsRealLogsAfterDeal(JSONArray jsonArray){
+		if(jsonArray.size()>0){
+			for(int i=0;i<jsonArray.size();i++){
+				JSONObject job = jsonArray.getJSONObject(i);  // 遍历 jsonarray 数组，把每一个对象转成 json 对象
+				String corsAccountCode = job.getString("accountCode");
+				//saveCorsRealtime(job);
+				System.out.println("corsAccountCode " + i + " : " + corsAccountCode) ;  // 得到 每个对象中的属性值
+				String hql = " from CorsAccount a where a.isDelete is null and a.corsAccountCode = ?";
+				CorsAccount corsAccount = commonDAO.getByVariableParam(hql, corsAccountCode);
+				if(corsAccount != null){
+					job.put("companyName", corsAccount.getCompany().getCompanyName());	
+				}
+				String resolveType = job.getString("resolveType");
+				job.put("resolveType", translateValueToName(resolveType, CorsRealtimeLogs.dicResolveType));
+			}
+		}
+
+		return jsonArray;
+	}
+	private void saveCorsRealtime(JSONObject json){
+		try {
+			CorsRealtimeLogs corsRealtimeLogs = json.toJavaObject(json, CorsRealtimeLogs.class);
+			commonDAO.save(corsRealtimeLogs);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	
+	
+	public JSONArray getStationRealLogsAfterDeal(JSONObject jsonObject){
+		JSONArray jsonArray = new JSONArray();
+		if(jsonObject != null && jsonObject.size()>0){
+			Set<String> keys = jsonObject.keySet();
+			for (String key : keys) {
+				JSONObject json = (JSONObject) jsonObject.get(key);
+				String hql = " from BaseConstruct a where a.isDelete is null and a.stationMapNo = ?";
+				BaseConstruct baseConstruct = commonDAO.getByVariableParam(hql, key);
+				if(baseConstruct != null){
+					json.put("companyName", baseConstruct.getOweCompany());
+					json.put("stationName", baseConstruct.getStationName());
+				}
+				String stationState = json.getString("stationState");
+				//saveExceptionStation(json);
+				if(!"1".equals(stationState)){
+					saveExceptionStation(json);
+				}
+				json.put("stationState", translateValueToName(stationState, BaseRealtimeLogs.dicStationState));
+				jsonArray.add(json);
+			}
+		}
+		
+		System.out.println("---------处理后的数据（基站）:" + jsonArray.toJSONString());
+		
+		return jsonArray;
+	}
+	
+	private void saveExceptionStation(JSONObject json){
+		try {
+			BaseRealtimeLogs baseRealtimeLogs = json.toJavaObject(json, BaseRealtimeLogs.class);
+			commonDAO.save(baseRealtimeLogs);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	private String translateValueToName(String value,String dicStr){
+		String[] dicArr = dicStr.split(",");
+		HashMap<String,String> rltMap = new HashMap<String,String>();
+		
+		for (String item : dicArr) {
+			rltMap.put(item.split(":")[0], item.split(":")[1]);
+		}
+		return rltMap.get(value);
+	}
+
+}

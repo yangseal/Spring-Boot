@@ -1,0 +1,46 @@
+(function($) {
+	function initFileInput(_self,_option){
+		_self.find(":file").fileupload({
+			url : CONTEXT_PATH + "/attachment/upload",
+			formData : _option,
+			dataType: 'json',
+	        done: function (e, data) {
+	            if(data.result.success){
+	            	_self.myFileUpload(_option);
+	            }else{
+	            	myAlert(data.result.message);
+	            }
+	        }
+		});
+	}
+	
+	function initDeleteButton(_self,_option){
+		_self.find("#deleteAttachment").click(function(){
+			var attachmentId = getSelectedEntityIdByAttach(_self);
+			if(!attachmentId){
+				myAlert("请选择待删除附件");
+				return;
+			}
+			myConfirm(globalDeleteTip,function(){
+				var url = CONTEXT_PATH + "/attachment/deleteAttachment";
+				var params = {attachmentId:attachmentId};
+				jQuery.post(url, params, function(data) {
+					if(data.success){
+						_self.myFileUpload(_option);
+					}else{
+						myAlert(data.message);
+					}
+				});
+			});
+		});
+	}
+	
+	$.fn.myFileUpload = function(option) {
+		var _self = this;
+		var url = CONTEXT_PATH + "/attachment/showAttachments";
+		this.load(url,option,function(){
+			initFileInput(_self, option);
+			initDeleteButton(_self, option);
+		});
+	};      
+})(jQuery);

@@ -1,0 +1,118 @@
+
+#wrap{ 
+	width:990px; 
+	overflow:hidden; 
+	height:1200px;
+}
+
+#dvMsgBox{
+	display:none;
+	position:fixed;
+	font-size:12px;
+	width:300px;
+	overflow:hidden;
+	z-index:1001; 
+	border-radius:3px; 
+}  
+#dvMsgBox .top{
+	height:40px; 
+	background-color:#2196f3;
+	float:left; 
+	width:100%;
+}  
+#dvMsgBox .top .right{
+	height:100%;
+}  
+#dvMsgBox .top .right .title{
+	height:100%;
+	line-height:40px;
+	color:#fff;
+	vertical-align:middle;
+	font-size:16px;
+	overflow:hidden;
+}  
+#dvMsgBox .body{
+	background:#fff;
+	padding-left:10px;
+}  
+#dvMsgBox .body .right{
+	background:#fff;
+	padding-right:2px;
+}  
+#dvMsgBox .body .right .ct{  
+	line-height: 60px;
+	vertical-align: middle;
+	width: 100%;
+	text-align: center;
+	color:#2196f3;
+	font-size: 14px;
+}  
+#dvMsgBox .body .right .ct .pro{
+	width:280px;
+	border:solid 1px #6593cf;
+	height:25px;
+	background:#ffffff;
+	line-height:23px;
+	overflow:hidden;
+}  
+#dvMsgBox .body .right .ct .pro .bg{
+	width:0%;
+	height:100%;
+	background:#c9dffc;
+}  
+#dvMsgBox .bottom{
+	background:#fff;
+	padding-left:6px;
+}  
+#dvMsgBox .bottom .right{
+	height:100%;
+	/*background:transparent url(right-corners.png) no-repeat right bottom;*/
+	padding-right:6px;
+}  
+input.btn{
+	width:65px;   
+	border-radius: 2px; 
+	cursor:pointer; 
+	color:#fff; 
+	border:none; 
+	height:28px; 
+	text-align:center;  
+	background-color:#2196f3;
+	text-align:center; 
+	margin:0px auto;
+	line-height: 28px;
+}  
+input.btnfocus{ 
+	background-color:#EC6D51; 
+	border-radius: 2px;
+	width:65px;
+	margin:0px auto; 
+	border:none; 
+	height:28px; 
+	cursor:pointer; 
+	color:#fff;
+	line-height: 28px;
+}  
+#dvMsgBox .icon{
+	width:32px;
+	height:32px;
+	float:left;
+	margin-right:10px;
+}  
+#dvMsgBox .error{background:url(icon-error.gif) no-repeat;}  
+#dvMsgBox .info{background:url(icon-info.gif) no-repeat;}  
+#dvMsgBox .warning{background:url(icon-warning.gif) no-repeat;}  
+#dvMsgBox .clear{clear:both;}  
+#dvMsgBox .height{height:0px;line-height:0px;}  
+#ShowBolightBox{
+	display:none;
+	-moz-opacity:0.5;
+	filter:alpha(opacity=50);
+	opacity:0.5;
+	background-color:#000000;
+	z-index:1000;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+#dvMsgBtns{ text-align:center; width:100%;}

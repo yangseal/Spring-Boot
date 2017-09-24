@@ -1,0 +1,303 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>厘米级定位服务-差分服务-产品与服务</title>
+<link rel = "Shortcut Icon" href="favicon.ico"/>
+<link type="image/x-icon" href="favicon.ico" rel="Bookmark"/>
+<link type="image/x-icon" href="favicon.ico" rel="Shortcut Icon"/>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/main.css"/>
+</head>	
+<body>
+<div class="header sub_header">
+  <div class="wrap mgat">
+    <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+    <ul class="nav">
+      <li><a href="index.html">首页</a></li>
+      <li class="this">
+        <a href="javascript:vid(0)" class="current">产品与服务</a>
+        <div class="box">
+          <div class="box_wrap wrap ofhd mgat">
+            <div class="box_top"><img src="images/nav_top.png"></div>
+            <!-- 二三级菜单 -->
+            <div class="tab" id="tab">
+              <div class="tab_col">
+                <ul>
+                  <li class="libg">差分服务</li>
+                  <li class="">智能设备</li>
+                  <!-- <li class=""><a href="javascript:vid(0)">精准应用App</a></li> -->
+                </ul>
+              </div>
+              <div class="turn" style="display: block; opacity: 1;">
+                <p><a href="product_serve_DIFF_CM.html" target="_self">厘米级</a></p> 
+                <p><a href="product_serve_DIFF_yami.html" target="_self">亚米级</a></p> 
+                <p><a href="product_serve_DIFF_meter.html" target="_self">米级</a></p>   
+              </div>
+              <div class="turn" style="display: none; opacity: 0; ">
+                <p><a href="product_serve_RTK.html">RTK</a></p> 
+                <p><a href="product_serve_LocationBox.html">定位盒子</a></p> 
+                <p><a href="product_serve_differencePhone.html">差分手机</a></p>
+                <p><a href="product_serve_locationPanel.html">定位平板</a></p> 
+              </div>
+              <!-- <div class="turn" style="display: none; opacity: 0; ">
+                
+              </div> -->
+            </div>
+
+      
+
+            <!-- 二三级菜单 -->
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="javascript:vid(0)">行业解决方案</a>
+        <div class="box">
+          <div class="box_wrap wrap ofhd mgat">
+            <div class="box_top"><img src="images/nav_top.png"></div>
+            <!-- 二三级菜单 -->
+            <div class="sub_nav left_nav1">
+              <p><a href="scheme_cityGas.html">城市燃气</a></p> 
+              <p><a href="scheme_cityDrain.html">城市给排水</a></p>
+              <p><a href="scheme_cityPower.html">电力行业</a></p> 
+              <p><a href="scheme_heatAddition.html">供热行业</a></p>
+              
+            </div>
+            <!-- 二三级菜单 -->
+          </div>
+        </div>
+      </li>
+      <!-- <li><a href="service_support.html">服务与支持</a></li> -->
+      <li><a href="case.html">成功案例</a></li>
+      <li>
+        <a href="about.html">关于我们</a>
+        <div class="box">
+          <div class="box_wrap wrap ofhd mgat">
+            <div class="box_top"><img src="images/nav_top.png"></div>
+            <!-- 二三级菜单 -->
+            <div class="sub_nav left_nav2">
+              <p><a href="about.html" target="_self" style="font-size: 12px;">国家北斗精准服务网</a></p> 
+              <p><a href="about_positionAlliance.html" target="_self">中国位置联盟</a></p> 
+              <p><a href="about_maintenanceUnit.html" target="_self">运维单位</a></p> 
+              <p><a href="about_contactUs.html" target="_self">联系方式</a></p>
+            </div>
+            <!-- 二三级菜单 -->
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="login">
+      <p><a href="../../home" >云服务入口</a></p>
+      <span><a href="../../register" >企业注册</a></span>
+    </div>
+  </div>
+</div>
+<div class="wraper bac3">
+  <div class="wraper_side">
+    <ul class="side_nav">
+      <li><p>差分服务</p></li>
+      <li><a href="product_serve_DIFF_CM.html">厘米级</a></li>
+      <li><a href="product_serve_DIFF_yami.html">亚米级</a></li>
+      <li><a href="product_serve_DIFF_meter.html" class="on">米级</a></li>
+    </ul>
+    <ul class="side_nav">
+      <li><p>智能设备</p></li>
+      <li><a href="product_serve_RTK.html">RTK</a></li>
+      <li><a href="product_serve_LocationBox.html">定位盒子</a></li>
+      <li><a href="product_serve_differencePhone.html">差分手机</a></li>
+      <li><a href="product_serve_locationPanel.html">定位平板</a></li>
+    </ul>
+    <!-- <ul class="side_nav">
+      <li><p><a href="javascript:vid(0)">精准应用App</a></p></li>
+    </ul> -->
+  </div>
+  <div class="wraper_con">
+    <!-- <div class="bar"><img src="images/bar.jpg"></div>
+    <div class="pro_colum bac3">联系我们：bdcloud@gassaas.com</div> -->
+    <div class="diff_con">
+      <div class="diff_tit">亚级精准定位服务</div>
+      <div class="diff_text">
+        <p>基于RTD的差分定位原理，依托于遍布全国的卫星定位地基增强站，融合各类定位技术，以互联网的方式提供7x24小时高可用差分播发服务，面向全国范围内的各类终端和应用系统，提供全国范围内无缝漫游的米级精度的位置纠偏数据服务。</p>
+      </div>
+      <div class="diff_tit">使用场景</div>
+      <div class="diff_text">
+        <p class="diff_title">—— 应急抢修</p>
+        <p>现场工作人员通过移动终端，对作业活动进行实时记录上传，管理人员通过平板或手机可随时了解应急抢修施工进度，查看人员、车辆到位情况。依据现场信息进行有效地决策，实现对现场过程的把控，保证施工过程安全和过程质量，做到精细化管控。</p>
+        <p class="diff_img"><img src="temp/diff_img05.jpg"></p>
+        <p class="diff_title">—— 市政维护</p>
+        <p>市政设备设施基础档案的完善是建设智慧城市的重要基础。如何快速、高效的采集市政设备设施的位置和其他基础信息，是管理者面临的首要难题。讯腾精准位置服务以北斗地基增强系统为支撑，结合专业化的测绘产品，可以大幅提高设备设施位置测量的效率和精度，为“智慧市政”奠定坚实的基础。</p>
+        <p class="diff_img"><img src="temp/diff_img06.jpg"></p>
+      </div>
+      <!-- <div class="diff_tit">推荐设备</div>
+      <ul class="diff_device">
+        <li>
+          <p></p>
+          <span>设备临时名称</span>
+        </li>
+        <li>
+          <p></p>
+          <span>设备临时名称</span>
+        </li>
+        <li>
+          <p></p>
+          <span>设备临时名称</span>
+        </li>
+      </ul> -->
+      <div class="diff_tit">覆盖城市</div>
+      <div class="diff_city">
+        <table width="935" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="200"><b>省份</b></td>
+            <td width="*"><b>城市</b></td>
+            <td width="120"><b>基站数量</b></td>
+          </tr>
+           <tr>
+            <td>湖南</td>
+            <td>长沙、株洲、湘潭、永州、怀化</td>
+            <td>9</td>
+          </tr>
+          <tr>
+            <td>江苏</td>
+            <td>常州、海安、淮安、盐城、泰兴、连云港、兴化</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>安徽</td>
+            <td>滁州、蚌埠、巢湖、亳州、六安</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>广东</td>
+            <td>东莞、肇庆、湛江、广州、河源、汕头、江门、惠州</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>浙江</td>
+            <td>湖州、海宁、萧山、龙游、永康、衢州、海盐、兰溪、金华、台州、杭州、宁波</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>河北</td>
+            <td>廊坊、石家庄</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>山东</td>
+            <td>聊城、青岛、胶州、莱阳、日照、邹平、烟台、胶南、诸城</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>福建</td>
+            <td>泉州</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>河南</td>
+            <td>新乡、洛阳、开封、濮阳、商丘</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>广西</td>
+            <td>桂林、贵港</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>内蒙古</td>
+            <td>通辽</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>辽宁</td>
+            <td>葫芦岛、盘锦、锦州</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>云南</td>
+            <td>昆明</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>海南</td>
+            <td>海口</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>陕西</td>
+            <td>西安</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>四川</td>
+            <td>成都</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>北京</td>
+            <td>直辖市郊区</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>深圳</td>
+            <td>特区郊区</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>重庆</td>
+            <td>直辖市郊区</td>
+            <td>4</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wraping footer foot_color">
+  <div class="wraper">
+    <ul class="footer_nav">
+      <li>
+        <p><a href="javascript:vid(0)" target="_self">产品与服务</a></p>
+        <span><a href="product_serve_DIFF_CM.html" target="_self">厘米级定位服务</a></span>
+        <span><a href="product_serve_DIFF_yami.html" target="_self">亚米级定位服务</a></span>
+        <span><a href="product_serve_DIFF_meter.html" target="_self">米级定位服务</a></span>
+        <span><a href="product_serve_RTK.html" target="_self">RTK</a></span>
+        <span><a href="product_serve_LocationBox.html" target="_self">定位盒子</a></span>
+        <span><a href="product_serve_differencePhone.html" target="_self">差分手机</a></span>
+        <span><a href="product_serve_locationPanel.html" target="_self">差分平板</a></span>
+      </li>
+      <li>
+        <p><a href="javascript:vid(0)" target="_self">行业方案</a></p>
+        <span><a href="scheme_cityGas.html" target="_self">城市燃气</a></span>
+        <span><a href="scheme_cityDrain.html" target="_self">城市给排水</a></span>
+        <span><a href="scheme_cityPower.html" target="_self">城市电力</a></span>
+        <span><a href="scheme_heatAddition.html" target="_self">供热行业</a></span>
+      </li>
+      <!-- <li>
+        <p><a href="service_support.html" target="_self">服务与支持</a></p>
+        <span><a href="service_support.html" target="_self">APK下载</a></span>
+        <span><a href="#" target="_self">用户手册下载</a></span>
+      </li> -->
+      <li>
+        <p><a href="#" target="_self">客户服务</a></p>
+        <span><a href="#" target="_self">业务咨询</a></span>
+        <span><a href="#" target="_self">故障申报</a></span>
+        <span><a href="#" target="_self">投诉建议</a></span>
+        <span><a href="#" target="_self">商务合作</a></span>
+      </li>
+      <li>
+        <p><a href="about.html" target="_self">关于我们</a></p>
+        <!-- <i><img src="images/code.png"></i> -->
+        <span><a href="about.html" target="_self">国家北斗精准服务网</a></span>
+        <span><a href="about_maintenanceUnit.html" target="_self">运维单位</a></span>
+      </li>
+    </ul>
+    <div class="footer_copy">© 2004-2016 北京讯腾智慧科技股份有限公司 经营许可证：B1.B2-20130326 京ICP备12028782号-4</div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+</body>
+</html>

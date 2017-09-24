@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+   http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd
+   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd
+   http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd">
+	<mvc:resources mapping="/favicon.ico" location="/favicon.ico,classpath:/favicon.ico" />
+	<mvc:resources mapping="/public/**" location="/public/,classpath:/public/" />
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<mvc:exclude-mapping path="/public/**" />
+			<bean class="com.cnten.platform.web.IllegalCharacterInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<mvc:exclude-mapping path="/public/**" />
+			<mvc:exclude-mapping path="/" />
+			<mvc:exclude-mapping path="/login" />
+			<mvc:exclude-mapping path="/corsLogin" />
+			<mvc:exclude-mapping path="/register" />
+			<mvc:exclude-mapping path="/checkMard/getChekMard" />
+			<mvc:exclude-mapping path="/detecteLogin" />
+			<mvc:exclude-mapping path="/propagandas/**" />
+			<mvc:exclude-mapping path="/measureProject/exportRar"/>
+			<mvc:exclude-mapping path="/companyTemp/**" />
+			<mvc:exclude-mapping path="/oamArea/selectOamArea"/>
+			<mvc:exclude-mapping path="/oamArea/getAreaByPid"/>
+			<mvc:exclude-mapping path="/oamArea/getPCity"/>
+			<mvc:exclude-mapping path="/oamBaseStationMap/**"/>
+			<mvc:exclude-mapping path="/msg/login" />
+			<mvc:exclude-mapping path="/msg/customer" />
+			<mvc:exclude-mapping path="/attachment/upload" />
+			<mvc:exclude-mapping path="/client/mgtCenter/clientInfo/showPicture" />
+			<mvc:exclude-mapping path="/attachment/showPicture" />
+			<mvc:exclude-mapping path="/favicon.ico"/>
+			<mvc:exclude-mapping path="/bdloc/**" />
+			<mvc:exclude-mapping path="/forum/forumIndex" />
+			<mvc:exclude-mapping path="/forum/showForum" />
+			<mvc:exclude-mapping path="/forum/showForumGuide" />
+			<mvc:exclude-mapping path="/forum/queryMinePosts"/>
+			<mvc:exclude-mapping path="/forum/showPost"/>
+			<mvc:exclude-mapping path="/forum/showBoard"/>
+			<mvc:exclude-mapping path="/forum/queryBoardPost"/>
+			<mvc:exclude-mapping path="/forum/showReplyedPost"/>
+			<mvc:exclude-mapping path="/forum/querySubject"/>
+			<mvc:exclude-mapping path="/forum/queryReplyPosts"/>
+			<bean class="com.cnten.platform.web.UserStatusInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+	<bean class="org.springframework.http.converter.ResourceHttpMessageConverter" />
+	<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+		<property name="supportedMediaTypes">
+			<list>
+				<value>application/json; charset=UTF-8</value>
+				<value>*; charset=UTF-8</value>
+			</list>
+		</property>
+	</bean>
+	<bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter" />
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<ref bean="org.springframework.http.converter.ResourceHttpMessageConverter" />
+				<ref bean="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" />
+			</list>
+		</property>
+	</bean>
+	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping">
+		<property name="detectHandlersInAncestorContexts" value="true" />
+	</bean>
+	<bean id="freeMarker" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+	    <property name="defaultEncoding" value="UTF-8" />
+		<property name="templateLoaderPaths">
+			<list>
+				<value>/WEB-INF/ftl</value>
+				<value>classpath:/ftl</value>
+			</list>
+		</property>
+		<property name="preferFileSystemAccess" value="false" />
+		<property name="freemarkerSettings">
+			<props>
+				<prop key="auto_import">common.ftl as common</prop>
+			</props>
+		</property>
+	</bean>
+	<bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+		<property name="cache" value="true" />
+		<property name="suffix" value=".ftl" />
+		<property name="contentType" value="text/html; charset=UTF-8" />
+		<property name="requestContextAttribute" value="rc"></property>
+		<property name="order" value="1" />
+	</bean>
+	
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+		<property name="order" value="2" />
+	</bean>
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+</beans>

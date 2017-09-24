@@ -1,0 +1,19 @@
+spring:
+   thymeleaf:
+        suffix: .html
+        prefix: classpath:templates/
+        encoding: utf-8
+        cache: false
+        content-type: text/html
+        mode: LEGACYHTML5
+   datasource:
+     url: jdbc:mysql://127.0.0.1:3306/moxi?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+     username: root
+     password: 123456
+     driver-class-name: com.mysql.jdbc.Driver
+   http:
+     multipart:
+       max-file-size: 10Mb
+       max-request-size: 100Mb
+server:
+  port: 8088

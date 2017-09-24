@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>关于我们-国家北斗精准服务网</title>
+<link rel = "Shortcut Icon" href="favicon.ico"/>
+<link type="image/x-icon" href="favicon.ico" rel="Bookmark"/>
+<link type="image/x-icon" href="favicon.ico" rel="Shortcut Icon"/>
+<link rel="stylesheet" href="css/reset.css"/>
+<link rel="stylesheet" href="css/main.css"/>
+</head>	
+<body>
+<div class="header sub_header sub_header_bg">
+  <div class="wrap mgat">
+    <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+    <ul class="nav">
+      <li><a href="index.html">首页</a></li>
+      <li>
+        <a href="javascript:vid(0)">产品与服务</a>
+        <div class="box">
+          <div class="box_wrap wrap ofhd mgat">
+            <div class="box_top"><img src="images/nav_top.png"></div>
+            <!-- 二三级菜单 -->
+            <div class="tab" id="tab">
+              <div class="tab_col">
+                <ul>
+                  <li class="libg">差分服务</li>
+                  <li class="">智能设备</li>
+                  <!-- <li class=""><a href="javascript:vid(0)">精准应用App</a></li> -->
+                </ul>
+              </div>
+              <div class="turn" style="display: block; opacity: 1;">
+                <p><a href="product_serve_DIFF_CM.html" target="_self">厘米级</a></p> 
+                <p><a href="product_serve_DIFF_yami.html" target="_self">亚米级</a></p> 
+                <p><a href="product_serve_DIFF_meter.html" target="_self">米级</a></p>   
+              </div>
+              <div class="turn" style="display: none; opacity: 0; ">
+                <p><a href="product_serve_RTK.html">RTK</a></p> 
+                <p><a href="product_serve_LocationBox.html">定位盒子</a></p> 
+                <p><a href="product_serve_differencePhone.html">差分手机</a></p>
+                <p><a href="product_serve_locationPanel.html">定位平板</a></p> 
+              </div>
+              <!-- <div class="turn" style="display: none; opacity: 0; ">
+                
+              </div> -->
+            </div>
+
+      
+
+            <!-- 二三级菜单 -->
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="javascript:vid(0)">行业解决方案</a>
+        <div class="box">
+          <div class="box_wrap wrap ofhd mgat">
+            <div class="box_top"><img src="images/nav_top.png"></div>
+            <!-- 二三级菜单 -->
+            <div class="sub_nav left_nav1">
+              <p><a href="scheme_cityGas.html">城市燃气</a></p> 
+              <p><a href="scheme_cityDrain.html">城市给排水</a></p>
+              <p><a href="scheme_cityPower.html">电力行业</a></p> 
+              <p><a href="scheme_heatAddition.html">供热行业</a></p>
+              
+            </div>
+            <!-- 二三级菜单 -->
+          </div>
+        </div>
+      </li>
+      <!-- <li><a href="service_support.html">服务与支持</a></li> -->
+      <li><a href="case.html">成功案例</a></li>
+      <li class="this">
+        <a href="about.html" class="current">关于我们</a>
+        <div class="box">
+          <div class="box_wrap wrap ofhd mgat">
+            <div class="box_top"><img src="images/nav_top.png"></div>
+            <!-- 二三级菜单 -->
+            <div class="sub_nav left_nav2">
+              <p><a href="about.html" target="_self" style="font-size: 12px;">国家北斗精准服务网</a></p> 
+              <p><a href="about_positionAlliance.html" target="_self">中国位置联盟</a></p> 
+              <p><a href="about_maintenanceUnit.html" target="_self">运维单位</a></p> 
+              <p><a href="about_contactUs.html" target="_self">联系方式</a></p>
+            </div>
+            <!-- 二三级菜单 -->
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="login">
+      <p><a href="../../home" >云服务入口</a></p>
+      <span><a href="../../register" >企业注册</a></span>
+    </div>
+  </div>
+</div>
+<div class="wraper bac3">
+  <div class="wraper_side">
+    <ul class="side_menu">
+      <li><p><a href="about.html">国家北斗精准服务网</a></p></li>
+      <li><p><a href="about_positionAlliance.html" class="on">中国位置网服务联盟</a></p></li>
+      <li><p><a href="about_maintenanceUnit.html">运维单位-讯腾智科</a></p></li>
+      <li><p><a href="about_contactUs.html">联系方式</a></p></li>
+    </ul>
+
+  </div>
+  <div class="wraper_con">
+    <div class="about_colum">中国位置网服务联盟</div>
+    <div class="about_con">
+      <p style="text-indent: 2em;">成立中国位置网服务联盟(以下简称:中国位联)根据国家测 绘地理信息局2014年工作要点,是落实《国家测绘地理信息局关 于北斗卫星导航系统推广应用的若干意见》的重大举措。中国位 联重点负责国家北斗精准服务网的规划和设计,为行业应用及大 量社会化应用提供更精准的北斗导航与定位服务,打造以行业应 用为引领(代表)的北斗全产业链基础服务平台,集结卫星导航与 位置服务产业龙头企业、技术实力科研单位, 以及创新应用单 位,以北斗系统应用为核心,以兼容其他卫星导航系统为补充, 通过多种导航定位技术集成融合,全方位、多部门、宽领域地推 进导航定位应用,满足经济社会发展和大众对位置服务的需求。 中国位联将成为位置服务产品和技术推广的平台、产业交流合作共赢的平台、重大项目统筹共建的平台、需求集约优惠共享的平 台、基金助推产业发展的平台。</p>
+      <p style="padding: 15px 0; text-align: center;"><img src="temp/about_img.jpg"></p>
+      <p style="padding: 15px 0; text-align: center;"><img src="temp/about_img2.jpg"></p>
+    </div>
+  </div>
+</div>
+<div class="wraping footer foot_color">
+  <div class="wraper">
+    <ul class="footer_nav">
+      <li>
+        <p><a href="javascript:vid(0)" target="_self">产品与服务</a></p>
+        <span><a href="product_serve_DIFF_CM.html" target="_self">厘米级定位服务</a></span>
+        <span><a href="product_serve_DIFF_yami.html" target="_self">亚米级定位服务</a></span>
+        <span><a href="product_serve_DIFF_meter.html" target="_self">米级定位服务</a></span>
+        <span><a href="product_serve_RTK.html" target="_self">RTK</a></span>
+        <span><a href="product_serve_LocationBox.html" target="_self">定位盒子</a></span>
+        <span><a href="product_serve_differencePhone.html" target="_self">差分手机</a></span>
+        <span><a href="product_serve_locationPanel.html" target="_self">差分平板</a></span>
+      </li>
+      <li>
+        <p><a href="javascript:vid(0)" target="_self">行业方案</a></p>
+        <span><a href="scheme_cityGas.html" target="_self">城市燃气</a></span>
+        <span><a href="scheme_cityDrain.html" target="_self">城市给排水</a></span>
+        <span><a href="scheme_cityPower.html" target="_self">城市电力</a></span>
+        <span><a href="scheme_heatAddition.html" target="_self">供热行业</a></span>
+      </li>
+      <!-- <li>
+        <p><a href="service_support.html" target="_self">服务与支持</a></p>
+        <span><a href="service_support.html" target="_self">APK下载</a></span>
+        <span><a href="#" target="_self">用户手册下载</a></span>
+      </li> -->
+      <li>
+        <p><a href="#" target="_self">客户服务</a></p>
+        <span><a href="#" target="_self">业务咨询</a></span>
+        <span><a href="#" target="_self">故障申报</a></span>
+        <span><a href="#" target="_self">投诉建议</a></span>
+        <span><a href="#" target="_self">商务合作</a></span>
+      </li>
+      <li>
+        <p><a href="about.html" target="_self">关于我们</a></p>
+        <!-- <i><img src="images/code.png"></i> -->
+        <span><a href="about.html" target="_self">国家北斗精准服务网</a></span>
+        <span><a href="about_maintenanceUnit.html" target="_self">运维单位</a></span>
+      </li>
+    </ul>
+    <div class="footer_copy">© 2004-2016 北京讯腾智慧科技股份有限公司 经营许可证：B1.B2-20130326 京ICP备12028782号-4</div>
+  </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+</body>
+</html>

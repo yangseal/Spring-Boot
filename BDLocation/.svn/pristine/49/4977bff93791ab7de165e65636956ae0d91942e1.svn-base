@@ -1,0 +1,78 @@
+hibernate.beanid=hibernate
+hibernate.name=\u7CFB\u7EDF\u9ED8\u8BA4\u6570\u636E\u6E90
+hibernate.driverClass=com.mysql.jdbc.Driver
+
+##################################################################################################################
+## 北京本地测试库
+hibernate.username=bdlocation_test
+hibernate.password=bdlocation_test
+hibernate.jdbcUrl=jdbc:mysql://192.168.20.23:3306/bdlocation_test?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
+##################################################################################################################
+
+
+##################################################################################################################
+## 西安本地开发库
+#hibernate.username=bdlocation
+#hibernate.password=bdlocation
+#hibernate.jdbcUrl=jdbc:mysql://192.168.1.117:3306/bdlocation?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
+
+## 西安本地测试库
+#hibernate.username=bdlocation_test
+#hibernate.password=bdlocation_test
+#hibernate.jdbcUrl=jdbc:mysql://192.168.1.100:3306/bdlocation_test?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
+##################################################################################################################
+
+
+##################################################################################################################
+## 114 西安测试(外网114.115.223.169|内网192.168.1.10)
+#hibernate.username=bdlocation_xa_t
+#hibernate.password=bdlocation_xa_t
+#hibernate.jdbcUrl=jdbc:mysql://192.168.1.10:3306/bdlocation_xa_test?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
+
+## 114 西安正式(外网114.115.223.169|内网192.168.1.10)
+#hibernate.username=bdlocation_xa
+#hibernate.password=bdlocation_xa
+#hibernate.jdbcUrl=jdbc:mysql://192.168.1.10:3306/bdlocation_xa?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
+##################################################################################################################
+
+
+##################################################################################################################
+## 114 测试(外网114.115.223.169|内网192.168.1.10)
+#hibernate.username=bdlocation_test
+#hibernate.password=bdlocation_test
+#hibernate.jdbcUrl=jdbc:mysql://192.168.1.10:3306/bdlocation_test?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
+
+## 114 正式(外网114.115.223.169|内网192.168.1.10)
+#hibernate.username=bdlocation
+#hibernate.password=bdlocation
+#hibernate.jdbcUrl=jdbc:mysql://192.168.1.10:3306/bdlocation?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true
+##################################################################################################################
+
+
+##################################################################################################################
+## hibernate设置
+hibernate.dialect=org.hibernate.dialect.MySQLDialect
+hibernate.show_sql=true
+hibernate.format_sql=true
+hibernate.hbm2ddl.auto=update
+hibernate.cache.provider_class=org.hibernate.cache.HashtableCacheProvider
+hibernate.cache.use_query_cache=true
+hibernate.packages.to.scan.one=com.cnten.po
+hibernate.packages.to.scan.two=com.cnten.po.*
+##################################################################################################################
+
+
+##################################################################################################################
+## 上传文件地址
+#uploadDir=/usr/local/tomcat/upload/
+#uploadDir=/usr/local/tomcat/BDLocation-XA/upload/attachments/
+uploadDir=/Users/wudong/Library/apache-tomcat-7.0.77/upload/attachments/
+##################################################################################################################
+
+
+##################################################################################################################
+## 客服邮件
+mail.smtp.host=smtp.263.net
+mail.from=zhangxue@gasshow.com
+mail.password=zbx576575179
+##################################################################################################################

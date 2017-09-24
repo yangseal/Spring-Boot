@@ -1,0 +1,945 @@
+@charset "utf-8";
+/* CSS Document */
+/*首页*/
+.cont_wrap{
+	width: 880px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	min-height: 600px;
+	background-color: #ffffff;
+	margin-bottom: 25px;
+}
+.list{
+	height: auto;
+	overflow: hidden;
+	padding: 15px 25px;
+	margin-bottom: 10px;
+}
+.list li{
+	height: auto;
+	overflow: hidden;
+	border-bottom: 1px #dedede dashed;
+	padding-top: 5px;
+	margin-bottom: 10px;
+}
+.list h2{
+	height: 40px;
+	overflow: hidden;
+	line-height: 40px;
+	vertical-align: middle;
+}
+.list h2 a{
+	font-size: 20px;
+	color: #333333;
+}
+.list h2 img{
+	margin-left: 12px;
+	vertical-align: middle;
+}
+.list h2 a:hover{
+	color: #0379db;
+}
+.list p{
+	height: 30px;
+	overflow: hidden;
+	line-height: 30px;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #999999;
+	margin-bottom: 5px;
+}
+.list p a{
+	margin-right: 8px;
+	color: #0379db;
+}
+.list span{
+	float: right;
+	line-height: 30px;
+	vertical-align: middle;
+}
+.list span i{
+	float: left;
+	margin-left: 15px;
+}
+.list span img{
+	float: left;
+	margin-top: 5px;
+	margin-right: 3px;
+}
+.list span a{
+	color: #999999;
+	margin-right: 0;
+}
+.list div{
+	font-size: 14px;
+	line-height: 26px;
+	color: #666666;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+.list div a{
+	float: right;
+	color: #ff7d00;
+}
+/**/
+.side_wrap{
+	width: 300px;
+	height: auto;
+	overflow: hidden;
+	float: right;
+}
+.list_hot{
+	width: 300px;
+	height: auto;
+	overflow: hidden;
+	background-color: #ffffff;
+	margin-bottom: 20px;
+}
+.list_hot p{
+	height: 40px;
+	border-bottom: 1px #dedede solid;
+	line-height: 40px;
+	vertical-align: middle;
+	margin: 0 20px;
+	margin-top: 5px;
+}
+.list_hot p span{
+	display: inline-block;
+	font-size: 18px;
+	color: #0379db;
+	border-bottom: 2px #0379db solid;
+}
+.list_hot ul{
+	height: auto;
+	overflow: hidden;
+	padding: 10px 20px;
+}
+.list_hot li{
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	font-size: 14px;
+	vertical-align: middle;
+}
+.side_link{
+	width: 300px;
+	height: auto;
+	overflow: hidden;
+	background-color: #ffffff;
+	padding: 15px;
+}
+.side_link a{
+	display: block;
+	width: 270px;
+	height: 100px;
+	overflow: hidden;
+	line-height: 95px;
+	font-size: 26px;
+	color: #ffffff;
+	vertical-align: middle;
+	text-indent: 40px;
+}
+.side_link .side_lt{
+	background: url(../../img/forum/side_abg1.png) no-repeat;
+	margin-bottom: 10px;
+}
+.side_link .side_lb{
+	background: url(../../img/forum/side_abg2.jpg) no-repeat;
+}
+/*分页*/
+.page{
+	height: 56px;
+	overflow: hidden;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.page a{
+	display: inline-block;
+	padding:  4px 11px;
+	border: 1px #dedede solid;
+	font-size: 14px;
+	color: #666666;
+	margin-right: 8px;
+}
+.page a:hover{
+	background-color: #e6e6e6;
+}
+.page a.this{
+	background-color: #0379db;
+	border-color: #0379db;
+	color: #ffffff;
+}
+.page span{
+	display: inline-block;
+	padding:  6px 11px;
+	font-size: 14px;
+	color: #666666;
+	margin-right: 8px;
+}
+/*新手指导*/
+.new_list{
+	width: 1200px;
+	height: auto;
+	overflow: hidden;
+	min-height: 600px;
+	background-color: #ffffff;
+	margin-bottom: 25px;
+}
+.new_list .list h2 a{
+	font-size: 18px;
+}
+
+.new_list .list b{
+	margin-right: 45px;
+}
+/*当前位置*/
+.location{
+	height: 36px;
+	border-bottom: 1px #eaeaea solid;
+	/*background-color: #efefef;*/
+	line-height: 36px;
+	vertical-align: middle;
+	padding: 0 20px;
+	font-size: 14px;
+	color: #333333;
+}
+.location img{
+	float: left;
+	margin-top: 8px;
+	margin-right: 5px;
+}
+.location a{
+	color: #0379db;
+	margin: 0 5px;
+}
+.location span{
+	color: #333333;
+	margin: 0 5px;
+}
+.guide{
+	height: auto;
+	overflow: hidden;
+	padding: 15px 30px;
+	border-bottom: 1px #eaeaea solid;
+}
+.guide img{
+	display: block;
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-right: 25px;
+	margin-top: 3px;
+}	
+.guide p{
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	font-size: 18px;
+	color: #0379db;
+	font-weight: bold;
+}
+.guide span{
+	line-height: 30px;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #666666;
+	margin-right: 20px;
+}
+.prerequisite{
+	height: 36px;
+	border-bottom: 1px #eaeaea solid;
+	/*background-color: #efefef;*/
+	line-height: 36px;
+	vertical-align: middle;
+	padding: 0 25px;
+	font-size: 14px;
+	color: #333333;
+}
+.prerequisite a{
+	margin: 0 10px;
+	color: #ff7d00;
+}
+/*帖子详情*/
+.det_top{
+	height: auto;
+	overflow: hidden;
+	background-color: #efefef;
+	padding: 10px 0;
+}
+.det_top a{
+	display: inline-block;
+	height: 28px;
+	padding: 0 10px;
+	background-color: #ffffff;
+	border:1px #dedede solid;
+	font-size: 13px;
+	color: #333333;
+	border-radius: 2px;
+	line-height: 28px;
+	padding: 0 10px;
+	float: left;
+	margin-right: 10px;
+}
+.det_top a:hover{
+	border-color: #2196f3;
+	color: #2196f3;
+}
+.det_top a:last-child{
+	float: right;
+	border-color: #2196f3;
+	color: #2196f3;
+}
+.det_top a:last-child:hover{
+	border-color: #2196f3;
+	background-color: #2196f3;
+	color: #ffffff;
+}
+.det_tit{
+	height: 50px;
+	overflow: hidden;
+	border-bottom: 1px #eaeaea solid;
+}
+.det_scan{
+	width: 200px;
+	height: 50px;
+	overflow: hidden;
+	background-color: #fafafa;
+	float: left;
+}
+.det_scan p{
+	width: 70px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	font-size: 14px;
+	color: #333333;
+	text-align: center;
+	padding-left: 10px;
+	line-height: 20px;
+	padding-top: 5px;
+}
+.det_scan p b{
+	font-weight: bold;
+	/*font-size: 16px;*/
+}
+.det_scan p:first-child{
+	margin-left: 20px;
+	text-align: center;
+}
+.det_title{
+	width: 999px;
+	height: 50px;
+	overflow: hidden;
+	float: left;
+	background-color: #fafafa;
+	border-left: 1px #eeeeee solid;
+}
+.det_title p{
+	width: 80%;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	text-indent: 20px;
+	line-height: 50px;
+	vertical-align: middle;
+	font-size: 16px;
+	color: #333333;
+}
+.det_title span{
+	display: block;
+	width: 80px;
+	height: 30px;
+	overflow: hidden;
+	float: right;
+	text-indent: 29px;
+	line-height: 32px;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #333333;
+	margin-top: 10px;
+	background: url(../../img/forum/ic_collect.png) 3px center no-repeat;
+}
+.det_title span.on{
+	font-size: 14px;
+	color: #ff7d00;
+	background: url(../../img/forum/ic_collect_on.png) 3px center no-repeat;
+}
+.det_con{
+	height: auto;
+	overflow: hidden;
+}
+.det_list{
+	height: auto;
+	overflow: hidden;
+}
+.det_list li{
+	height: auto;
+	overflow: hidden;
+	background-color: #fafafa;
+}
+.det_info{
+	width: 200px;
+	height: auto;
+	min-height: 160px;
+	overflow: hidden;
+	float: left;
+}
+.det_info p{
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 3px;
+    border: 1px solid #eff3f4;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+.det_info p img{
+	display: block;
+	width: 100px;
+	height: 100px;
+}
+.det_info span{
+	display: block;
+	height: auto;
+	overflow: hidden;
+	padding: 6px 20px;
+	text-align: center;
+	font-size: 14px;
+	color: #0379db;
+	font-weight: bold;
+}
+.det_info i{
+	display: block;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+	font-size: 14px;
+	color: #333333;
+}
+.det_wrap{
+	width: 999px;
+	height: auto;
+	overflow: hidden;
+	min-height: 190px;
+	float: left;
+	border-left: 1px #eeeeee solid;
+	border-bottom: 1px #eeeeee solid;
+	box-sizing:border-box;
+	padding: 0 20px;
+	padding-bottom: 10px;
+	background-color: #ffffff;
+}
+.det_time{
+	height: 34px;
+	line-height: 34px;
+	vertical-align: middle;
+	border-bottom: 1px #dedede dashed;
+	line-height: 34px;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #333333;
+}
+.det_time span{
+	margin-right: 15px;
+	color: #ff7d00;
+}
+.det_cont{
+	height: auto;
+	overflow: hidden;
+	font-size: 14px;
+	color: #333333;
+	line-height: 24px;
+	padding: 15px 0;
+	padding-bottom: 10px;
+	min-height: 90px;
+}
+.reply_bt{
+	width: 50px;
+	height: 28px;
+	line-height: 28px;
+	overflow: hidden;
+	vertical-align: middle;
+	margin-bottom: 5px;
+	cursor: pointer;
+	float: right;
+	font-size: 13px;
+	color: #333333;
+}
+.reply_bt:hover{
+	color: #0379db;
+}
+.reply_bt img{
+	float: right;
+	margin-top: 5px;
+	margin-right: 1px;
+}
+.reply_con{
+	margin: 0 3px;
+	border:1px #dedede solid;
+	background-color: #f5f5f5;
+	height: auto;
+	overflow: hidden;
+	clear: both;;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	padding: 15px 15px;
+}
+.reply_con li{
+	height: auto;
+	overflow: hidden;
+	font-size: 13px;
+	color: #333333;
+	line-height: 24px;
+	background-color: #f5f5f5;
+}
+.reply_con li span{
+	color: #0379db;
+	font-weight: bold;
+	margin: 0 5px;
+}
+.reply_con li p{
+	text-align: right;
+	font-size: 12px;
+	color: #999999;
+}
+.reply_con li a{
+	margin-left: 10px;
+	color: #0379db;
+	font-weight: bold;
+}
+/*主帖回复*/
+.reply_edit{
+	height: auto;
+	overflow: hidden;
+	border: 1px #eaeaea solid;
+	background-color: #ffffff;
+}
+.reply_edit .det_wrap{
+	width: 997px;
+	border-bottom:none;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+.reply_edit .det_list li{
+	border-bottom:1px #eeeeee solid;
+}
+.reply_edit .det_info p{
+	margin-top: 30px;
+}
+.reply_submit{
+    width: 120px;
+    height: 34px;
+    overflow: hidden;
+    float: right;
+    border-radius: 17px;
+    background-color: #0379db;
+    line-height: 34px;
+    vertical-align: middle;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.reply_submit img{
+	width: 18px;
+	float: left;
+	margin-top: 8px;
+	margin-left: 15px;
+	margin-right: 7px;
+}
+/*回复弹窗*/
+.cover{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position:fixed;
+	z-index: 999;
+	background-color: rgba(0,0,0,0.3);
+	top: 0;
+	left:0;
+	display: none;
+}
+.box_wrap{
+	width: 600px;
+	height: 275px;
+	overflow: hidden;
+	position: relative;
+	background-color: #ffffff;
+	margin: 0 auto;
+	top: 50%;
+	margin-top: -140px;
+	border: 3px rgba(0,0,0,0.6) solid;
+	display: none;
+}
+.box_title{
+	height: 30px;
+	border-bottom: 1px #b8d7f5 solid;
+	background-color: #eaf2fa;
+	font-size: 14px;
+	overflow: hidden;
+	color: #000000;
+	line-height: 30px;
+	vertical-align: middle;
+	text-indent: 10px;
+	font-weight: bold;
+}
+.box_title p{
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	float: right;
+	margin-right: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+}
+.box_title span{
+	margin-left: 5px;
+	color: #0379db;
+}
+.box_title p img{
+	display: block;
+	width: 20px;
+	height: 20px;
+}
+.box_text{
+	margin: 11px 10px;
+}
+.box_submit{
+	width: 70px;
+	height: 28px;
+	overflow: hidden;
+	float: right;
+	background-color: #ff7d00;
+	color: #ffffff;
+	margin-right: 10px;
+	border-radius: 2px;
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 28px;
+	vertical-align: middle;
+}
+/*发布帖子*/
+.publish_title{
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 15px;
+}
+.publish_title label{
+	font-size: 14px;
+	color: #333333;
+}
+.publish_title input{
+	width: 500px;
+	height: 30px;
+	border: 1px #dedede solid;
+	font-size: 14px;
+	color: #333333;
+	padding: 0 8px;
+}
+.publish_title b{
+	font-weight: bold;
+	color: #ff0000;
+	padding-left: 15px;
+}
+/*我的论坛*/
+.my_tit{
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	color: #333333;
+	padding-left: 22px;
+}
+.my_nav{
+	height: auto;
+	overflow: hidden;
+	margin-top: 20px;
+	border-top: 1px #eeeeee solid;
+}
+.my_nav li{
+	height: 40px;
+	overflow: hidden;
+	border-bottom: 1px #eeeeee solid;
+}
+.my_nav li a{
+	display: block;
+	height: 40px;
+	overflow: hidden;
+	line-height: 40px;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #333333;
+}
+.my_nav li.on a{
+	background-color: #c6e5fe;
+	color: #333333;
+}
+.my_nav li img{
+	float: left;
+	margin-left: 40px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+/*积分*/
+ul.my .det_wrap{ min-height: 550px; }
+.integral_tit{
+	height: 45px;
+	overflow: hidden;
+	border-bottom: 1px #eeeeee solid;
+	line-height: 45px;
+	vertical-align: middle;
+	font-size: 15px;
+	color: #333333;
+	margin: 0 10px;
+	margin-bottom: 15px;
+}
+.integral_tit span{ margin-right: 100px; }
+.integral_tit b{ 
+	font-weight: bold; 
+	color: #0379db;
+}
+.integral_txt{
+	height: auto;
+	overflow: hidden;
+	margin-bottom: 15px;
+	padding: 0 10px;
+	line-height: 28px;
+	font-size: 14px;
+	color: #333333;
+}
+.integral_txt p{
+	font-weight: bold;
+}
+/*我的收藏和发表*/
+.me_list{
+	height: auto;
+	overflow: hidden;
+	padding: 0 10px;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+.me_list li{
+	height: 42px;
+	overflow: hidden;
+	line-height: 45px;
+	vertical-align: middle;
+	border-bottom: 1px #dedede dashed;
+	font-size: 14px;
+	color: #999999;
+}
+.me_list li a{
+	color: #333333;
+	margin-right: 10px;
+}
+.me_list li a:hover{
+	color: #ff7d00;
+}
+.me_list li span{
+	font-size: 13px;
+	color: #666666;
+	float: right;
+}
+.me_list li span i{
+	float: left;
+	margin-left: 10px;
+}
+.me_list li span img{
+	float: left;
+	margin-top: 14px;
+	margin-right: 3px;
+}
+/*基本资料*/
+.my_info{
+	padding: 10px;
+	height: auto;
+	/*overflow: hidden;*/
+}
+.my_info_con{
+	height: auto;
+	/*overflow: hidden;*/
+	padding-left: 60px;
+	clear: both;
+	padding-top: 5px;
+}
+.my_info_con span{
+	display: block;
+	width: 90px;
+	height: auto;
+	overflow: hidden;
+	float: left;
+	font-size: 14px;
+	color: #333333;
+	line-height: 40px;
+}
+.my_info_con p{
+	height: auto;
+	overflow: hidden;
+	float: left;
+	line-height: 40px;
+	font-size: 14px;
+	color: #333333;
+}
+.my_info_con label{
+	margin-right: 15px;
+	cursor: pointer;
+}
+.my_info_con label input{
+	vertical-align: middle;
+	margin-right: 3px;
+}
+.my_info_con input[type="text"]{
+	width: 200px;
+	height: 30px;
+	border: 1px #dedede solid;
+	padding: 0 10px;
+}
+.my_info_con select{
+	width: 70px;
+	height: 30px;
+	border: 1px #dedede solid;
+	padding: 0 5px;
+	margin-right: 3px;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #333333;
+}
+.my_info_con p select:first-child{
+	margin-left: 0px;
+}
+.my_info_con p select:last-child{
+	width: 60px;
+}
+.my_info_con textarea{
+	width: 400px;
+	height: 100px;
+	border: 1px #dedede solid;
+	padding:5px 8px;
+	resize: none;
+	margin: 7px 0;
+	font-size: 14px;
+	color: #333333;
+	line-height: 24px;
+}
+/* m_zlxg */
+.m_zlxg{ 
+	width:93px; 
+	height:30px; 
+	line-height:30px;
+	cursor:pointer;
+	float:left;
+	display:inline;
+	background:url(../../img/forum/zlxg2.jpg) 63px center no-repeat;
+	margin-top: 5px;
+}
+.m_zlxg p{ 
+	width:71px; 
+	padding-left:10px; 
+	overflow:hidden;
+	line-height:30px; 
+	color:#333333; 
+	font-size:14px; 
+	text-overflow:ellipsis; 
+	white-space:nowrap;
+	border: 1px #dedede solid;
+}
+.m_zlxg2{ 
+	position:absolute; 
+	top:36px; 
+	border:1px solid #dedede;
+	background:#fff; 
+	width:91px; 
+	display:none; 
+	max-height:224px;
+	-height:224px; 
+	overflow-x:hidden; 
+	overflow-y:auto;
+	white-space:nowrap;
+}
+.m_zlxg2 li{
+	line-height:28px;
+	white-space:nowrap; 
+	padding-left:10px;
+	color:#333333; 
+	font-size:14px;
+}
+.m_zlxg2 li:hover{ color:#7a5a21;}
+/**/
+p.up_img{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 3px;
+    border: 1px solid #eff3f4;
+    /*margin-top: 15px;
+    margin-bottom: 3px;*/
+    line-height: normal;
+    margin-right: 15px;
+}
+p.up_img img{
+    width: 100px;
+    height: 100px;
+}
+p.up_bt{
+    height: auto;
+    overflow: hidden;
+    margin-top: 75px;
+    cursor: pointer;
+}
+p.up_bt input{
+	/*width: 100px;
+	height: 30px;*/
+	position: absolute;
+    font-size: 100px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+    opacity:0;
+}
+p.up_bt a{
+	display: block;
+    position: relative;
+    width: 100px;
+    height: 30px;
+    overflow: hidden;
+    background-color: #ff7d00;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+.my_ok{
+	clear: both;
+	width: 100px;
+    height: 30px;
+    overflow: hidden;
+    background-color: #0379db;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    margin-left: 155px;
+}
+.bg{
+    width: 53%;
+    height: 50%;
+    margin: 0px auto;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    background-color: #fafafa;
+    filter: alpha(opacity=5);
+    -moz-opacity: 0.05;
+    opacity: 0.09;
+    font-size: 100px;
+    color: #000;
+}

@@ -1,0 +1,265 @@
+/*菜单样式*/
+#menuUL {
+	height:36px;
+	background:#011a4a;
+	font-size:1.3em;
+	text-align:center;
+	font-family: "微软雅黑";
+    padding-left: 3px;
+}
+#menuUL a {
+	font-size:0.7em;
+	text-decoration: none;
+}
+#menuUL li ul {
+	display:none;
+}
+#menuUL li ul li {
+	float:none;
+	border-bottom: 1px #abacbe solid;
+}
+#menuUL li ul li:last-child{
+	border-bottom: none;
+}
+#menuUL li ul a {
+	float:none;
+	height:32px;
+	line-height:32px;
+	padding:0 10px;
+	color: #000000;
+	text-align: left;
+	padding-left: 20px;
+}
+#menuUL li ul a:hover{
+	color: #ffffff;
+}
+.second-menu, .third-menu {
+	position:absolute;
+	z-index: 9999999;
+}
+.first-menu li {
+	float:left;
+	position:relative;
+}
+.first-menu a {
+	float:left;
+	display:block;
+	padding:0 12px;
+	height:36px;
+	line-height:36px;
+	font-size:1em;
+	color: #ffffff;
+	text-decoration: none;
+}
+.first-menu a:hover {
+	background:#ff7d00;
+	color: #ffffff;
+	text-decoration: none;
+}
+.second-menu {
+	width:140px;
+	top:35px;
+	left:0;
+}
+.second-menu a {
+	font-size:11px;
+	background:#d8d9ed;
+}
+.second-menu a.arrow {
+	/*background:#3a3a3a url(../img/arrow.gif) no-repeat right top;*/
+}
+.second-menu a.arrow:hover {
+	background:#ff7d00 url(../img/arrow.gif) no-repeat right -32px;
+	color: #011a4a;
+}
+.third-menu {
+	width:140px;
+	top:0;
+	left:140px;
+	background-color: #6f6e6e;
+}
+#menuUL li ul.third-menu li{
+	border-bottom: 1px #abacbe solid;
+}
+#menuUL li ul.third-menu li a{
+	background-color: #c6c7e1;
+}
+#menuUL li ul.third-menu li a:hover{
+	background-color: #ff7d00;
+}
+#menuUL li ul.third-menu li:last-child{
+	border-bottom: none;
+}
+.third-menu a {
+	font-weight:normal;
+	/*border-top:1px solid #595959;
+	border-left:1px solid #595959;
+	border-bottom:1px solid #333;
+	border-right:1px solid #333;*/
+}
+/*菜单样式结束*/
+
+/*页签样式*/
+.sys_nav{
+	position: relative;
+}
+.sys_nav p{
+	width: 40px;
+	height: 32px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.sys_nav p a{
+	display: block;
+	width: 20px;
+	height: 32px;
+	overflow: hidden;
+	text-align: center;
+	line-height: 32px;
+	font-size: 14px;
+	color: #333333;
+	float: left;
+	cursor: pointer;
+	text-decoration: none;
+}
+#tabUL{
+	width: 100%;
+	height: 32px;
+	overflow: hidden;
+	background-color: #f8f8f8;
+	/*margin-bottom: 4px;*/
+	border-bottom: 1px #a6aeb8 solid;
+	padding-right: 40px;
+	padding-left: 5px;
+}
+#tabUL>li {
+	display:inline-block;
+	margin-right:-1px;
+	margin-top: 4px;
+	padding: 0 9px;
+	font-size: 12px;
+	color:#000000;
+	float: left;
+	border: 1px #a6aeb8 solid;
+	line-height: 26px;
+	background-color: #dbe7f3;
+}
+#tabUL>li a{
+	color:#000000;
+	text-decoration: none;
+	font-size: 12px;
+}
+#tabUL>li a:first-child{
+	margin-right:3px;
+}
+#tabUL>li:first-child{
+	margin-left: 0px;
+}
+#tabUL>li.active {
+	background-color:#fff;
+	border: 1px #ff7d00 solid;
+	/*line-height: 24px;*/
+	border-top: 2px #ff7d00 solid;
+	margin-top: 3px;
+	font-weight: bold;
+	border-bottom: 1px #ffffff solid;
+}
+#tabUL>li.active a{
+	color: #ff7d00;
+}
+.tab-close-btn {
+	margin-left : 5px;
+}
+/*页签样式结束*/
+
+/*主页面样式*/
+#mainContentDiv {
+  /*padding:0 15px;*/
+  padding: 0;
+}
+#mainContentDiv>iframe {
+	display:none;
+}
+#mainContentDiv>iframe.active {
+	display:block;
+	width:100%;
+	height:100%;
+} 
+/*主页面样式结束*/
+
+/*新添加主页样式  start*/
+.header{
+	width: 100%;
+	height: 70px;
+	overflow: hidden;
+	background:url(../img/head_bg.jpg) no-repeat;
+}
+.header p{
+	width: 500px;
+	height: 70px;
+	overflow: hidden;
+	background:url(../img/logo.png) 15px 0 no-repeat;
+	float: left;
+}
+.header p span{
+	display: block;
+	font-size: 28px;
+	color: #011a4a;
+	font-family: "微软雅黑";
+	margin-left: 100px;
+	margin-top: 15px;
+}
+.login_info{
+	width: 370px;
+	height: auto;
+	overflow: hidden;
+	float: right;
+	font-family: "微软雅黑";
+}
+.welcome{
+	display: block;
+	width: 200px;
+	height: 35px;
+	overflow: hidden;
+	line-height: 35px;
+	font-size: 14px;
+	color: #000000;
+	margin-top: 15px;
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+}
+.welcome b{
+	color: #ff7d00;
+	font-weight: normal;
+}
+.edit{
+	display: block;
+	width: 90px;
+	height: 35px;
+	float: left;
+	margin-top: 15px;
+	line-height: 35px;
+}
+.off{
+	display: block;
+	width: 60px;
+	height: 35px;
+	float: left;
+	margin-top: 15px;
+	line-height: 35px;
+}
+.off i, .edit i{
+	margin-right: 5px;
+}
+.login_info a{
+	font-size: 14px;
+	color: #000000;
+	text-decoration: none;
+}
+.login_info a:hover{
+	text-decoration: none;
+}
+/*新添加主页样式  end*/

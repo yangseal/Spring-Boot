@@ -1,0 +1,7 @@
+email:
+    host : smtp.163.com
+    port : 25
+    from : aaaa@163.com
+    smtPauth: false
+    fromPassword : aaaaa
+

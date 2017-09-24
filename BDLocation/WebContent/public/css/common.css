@@ -1,0 +1,360 @@
+* {
+	margin: 0;
+	padding:0;
+	font-family: "微软雅黑";
+}
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+}
+ul {
+	list-style:none;
+	margin-bottom:0px;
+}
+
+.pager i {
+	margin-right : 10px;
+}
+
+/*遮罩层样式*/
+#spinnerDiv {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:black;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+	overflow:hidden;
+	z-index:9999;
+}
+/*遮罩层样式结束*/
+
+.form-horizontal .form-group {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.command-div {
+	padding-top : 5px;
+	padding-bottom : 5px;
+}
+
+.command-div .btn {
+	margin-right : 10px;
+}
+
+.grid-page-command {
+	padding-top : 8px;
+	padding-bottom : 6px;
+}
+
+.grid-page-command .btn {
+	margin-right : 5px;
+	padding: 3px 10px;
+	font-size: 13px;
+	border-radius: 1px;
+}
+
+.card-page-command {
+	text-align:center;
+}
+/*2016-10-26 zbh*/
+.form-inline{ padding-top: 6px; }
+.form-inline label{ 
+	padding-right: 4px;
+	font-size: 13px;
+	line-height: 28px;
+}
+.form-inline .form-control{
+	height: 26px;
+	padding: 3px 5px;
+	border-radius: 1px;
+	margin-right: 20px;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+	padding: 0px;
+	font-size: 12px;
+	line-height: 28px;
+	border: 1px solid #d3dce5;
+	padding: 2px 0;
+	padding-left: 10px;
+}
+.pager{
+	font-size: 12px;
+}
+input[type=checkbox], input[type=radio] {
+	display: inline-block;
+	float: left;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    /*margin-left: 10px;*/
+}
+.form-control-feedback{
+	top:-3px;
+	right: 17px;
+}
+.btn{
+	margin-right: 5px;
+    padding: 3px 10px;
+    font-size: 13px;
+    border-radius: 1px;
+}
+.command-div .btn {
+    margin-right: 5px;
+}
+@media (min-width: 768px){
+.form-inline .has-feedback .form-control-feedback {
+    top: -2px;
+  }
+}
+.table thead{
+	background-color: #ebeff3;
+}
+.table div a.btn{
+	padding: 0px 8px;
+	font-size: 12px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.tree_table .vsStyle_shut, .tree_table .vsStyle_last_shut {
+    background: url(./allbgs.png) no-repeat -16px 3px;
+}
+.table thead tr td:first-child{
+	padding-left: 10px;
+}
+a.btn{
+	margin-top: 7px;
+	margin-bottom: 6px;
+}
+.table th{
+	background-color: #ebeff3;
+}
+.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
+    border-top: 1px solid #d3dce5;
+}
+.ui-dialog{
+	border-radius: 1px;
+}
+.ui-dialog-title{
+	padding: 8px 16px;
+}
+.ui-dialog-close {
+    top: 8px;
+    right: 8px;
+}
+.form-control {
+    height: 30px;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 1px;
+}
+.form-horizontal .control-label{
+	font-size: 12px;
+}
+.ui-dialog-body {
+    padding: 10px;
+}
+.ui-dialog-footer button {
+    padding: 2px 10px;
+    font-size: 12px;
+    border-radius: 1px;
+}
+/* 通用内边距 */
+.cont_box{
+	padding: 10px;
+	/*box-sizing:border-box;*/
+}
+/*用户角色添加*/
+.bh_user_add{
+	width: 500px;
+	padding-top: 7px;
+}
+.form-control {
+    height: 26px;
+    padding: 2px 4px;
+}
+@media (min-width: 768px){
+.form-horizontal .control-label {
+    padding-top: 0px;
+}
+}
+.form-horizontal .control-label {
+    line-height: 28px;
+    vertical-align: middle;
+}
+.bh_user_bt{
+	width: 450px;
+}
+.nav-tabs>li>a {
+    border-radius: 1px 1px 0 0;
+    margin-right: 0px;
+}
+.nav>li>a{
+    padding: 3px 13px;
+    font-size: 12px;
+}
+.nav-tabs{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+.bh_dom_box{
+	width: 500px;
+	margin-top: 15px;
+}
+form{
+	padding: 10px;
+}
+
+/*新区域选择*/
+.sel_city p{
+	width: 120px;
+	height: auto;
+	margin-left:134px;
+	overflow: hidden;
+	float: left;
+	font-size: 14px;
+	color: #333333;
+	line-height: 32px;
+}
+.sel_city i{
+	line-height: 30px;
+	color: #ff0000;
+	padding-left: 5px;
+}
+.city_select #store-selector{
+    position: relative;
+    float: left;
+    z-index: 2;
+    height: 32px;
+    margin-right: 0px;
+}
+.city_select #store-selector .text {
+    height: 30px;
+    padding: 0 20px 0 7px;
+    line-height: 30px;
+}
+.city_select #store-selector .content {
+    top: 30px;
+}
+.city_select #JD-stock .tab {
+    margin-left: 0;
+    margin-top: 0;
+}
+/*20161207*/
+.fj_box{
+	border:1px solid #eaeaea; 
+	padding:5px 10px 0px 10px;
+	min-height: 26px;
+}
+.fj_box .table{
+	margin-bottom: 10px;
+}
+.fj_box2{
+	border:1px solid #eaeaea; 
+	padding:10px 10px 0px 10px;
+	min-height: 26px;
+}
+.fj_box2 .table{
+	margin-bottom: 10px;
+}
+.ct_tit span{
+	display: inline-block;
+	border: 1px #d3dce5 solid;
+	position: relative;
+	background-color: #ebeff3;
+	padding-left: 40px;
+	padding-right: 20px;
+}
+.ct_tips{
+	line-height: 26px;
+	vertical-align: middle;
+	color: #ff0000;
+	padding-left: 15px;
+}
+.tips_icon .form-control-feedback {
+    top: -3px;
+    right: 36%;
+}
+label.ct_la{
+	font-weight: normal;
+	padding-right: 10px;
+}
+label.ct_la span{
+	line-height: 28px;
+	vertical-align: middle;
+	padding-left: 5px;
+}
+.form-group .col-sm-1{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.pt15{
+	padding-top: 15px;
+}
+.col-sm-5 #JD-stock .tab {
+    border-bottom: 2px solid #cecbce;
+}
+.col-sm-5 #JD-stock .tab a {
+    color: #333333;
+}
+.col-sm-5 #JD-stock .tab .curr {
+    border: 2px solid #cecbce;
+    border-bottom: 0;
+}
+.col-sm-5 #JD-stock .area-list li a {
+    color: #333333;
+}
+/*切换按钮样式*/
+.ct_bta input{
+	display: inline-block;
+	background-image: none;
+    border: 1px solid transparent;
+	color: #021f27;
+    background-color: #bdcdd2;
+    border-color: #a4b6bc;
+    padding: 3px 10px;
+    font-size: 13px;
+    border-radius: 1px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    box-shadow: none;
+}
+.ct_bta input.ct_btbg{
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    color: #ffffff;
+}
+.ct_bta input:hover{ color: #021f27;  }
+.ct_bta input.ct_btbg:hover{
+    color: #ffffff;
+}
+.ct_bta input:focus{ 
+	outline: none;
+	box-shadow: none;
+}
+/*后台按钮灰色*/
+.admin_gray{
+	color: #999999;
+}
+a.admin_gray:hover{
+	color: #999999;
+	text-decoration: none;
+}
+.table a:hover {
+    text-decoration: none;
+}
+.isNotNull{
+	border: 1px #ff0000 solid;
+	box-shadow: 0px 0px 4px 1px rgba(255,0,0,0.3);
+}
